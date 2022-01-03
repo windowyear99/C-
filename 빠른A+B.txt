@@ -1,0 +1,28 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            StringBuilder answer = new StringBuilder();
+
+            int Num = int.Parse(Console.ReadLine());
+            int[] a = new int[Num];
+            int[] b = new int[Num];
+            for (int i = 0; i < Num; i++)
+            {
+                string[] s = Console.ReadLine().Split();
+                a[i] = int.Parse(s[0]);
+                b[i] = int.Parse(s[1]);
+                answer.AppendLine((a[i] + b[i]).ToString());
+            }
+            Console.WriteLine(answer.ToString());
+        }
+    }
+}
