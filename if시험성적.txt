@@ -1,0 +1,37 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace question1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int Point = int.Parse(Console.ReadLine());
+            if (90 <= Point && Point <=100)
+            {
+                Console.WriteLine("A");
+            }
+            else if (80 <= Point && Point <= 89)
+            {
+                Console.WriteLine("B");
+            }
+            else if(70 <= Point && Point <= 79)
+            {
+                Console.WriteLine("C");
+            }
+            else if(60 <= Point && Point <= 69)
+            {
+                Console.WriteLine("D");
+            }
+            else
+            {
+                Console.WriteLine("F");
+            }
+
+        }
+    }
+}
