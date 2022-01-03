@@ -1,0 +1,32 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace question1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string inputA = Console.ReadLine();
+            string inputB = Console.ReadLine();
+
+            int a = int.Parse(inputA);
+            int b = int.Parse(inputB);
+            int print1 = a * ((b % 100)%10);
+            int print2 = a * ((b % 100) / 10);
+            int print3 = a * (b / 100);
+            int print4 = a * b;
+            Console.WriteLine(print1);
+            Console.WriteLine(print2);
+            Console.WriteLine(print3);
+            Console.WriteLine(print4);
+
+
+
+
+        }
+    }
+}
