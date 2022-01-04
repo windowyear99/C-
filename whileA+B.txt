@@ -1,0 +1,29 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            while(true)
+            {
+
+
+                string[] s = Console.ReadLine().Split();
+                int A = int.Parse(s[0]);
+                int B = int.Parse(s[1]);
+                
+                if ((A + B) == 0) break;
+                Console.WriteLine(A + B);
+
+
+
+            }
+        }
+    }
+}
