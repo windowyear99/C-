@@ -1,0 +1,29 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int N = int.Parse(Console.ReadLine());
+            int N1 = N; 
+            int Count = 0;
+            
+            while (true)
+            {
+                int A = N / 10;
+                int B = N % 10;
+                N = (B * 10) + (A + B) % 10;
+                Count++;
+                if (N1 == N) break;
+
+            }
+            Console.WriteLine(Count);
+        }
+    }
+}
